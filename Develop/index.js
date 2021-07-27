@@ -7,7 +7,7 @@ const questions = () => {return inquirer.prompt[
     {
         type: 'input',
         name: 'title',
-        message: 'What is your project title?',
+        message: `What is your project's repository name?`,
     },
     {
         type: 'input',
