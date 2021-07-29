@@ -16,7 +16,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  https://shields.io/github/license/${data.github}/${data.title}
+  ![Github license](https://img.shields.io/github/license/${data.github}/${data.title})
 
   ## Description
   ${data.description}
@@ -26,8 +26,9 @@ function generateMarkdown(data) {
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributors](#contributors)
 - [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 ${data.installation}
@@ -39,12 +40,12 @@ ${data.usage}
 This application is covered under the ${data.license} license.
 
 
-## Contributions
-${data.contributing}
+## Contributors
+Contributors: ${data.contributors}
 
 
 ## Tests
-${data.tests}
+The following are tests that need to be run: ${data.tests}
 
 ## Questions
 Please reach out if you have any further questions:
